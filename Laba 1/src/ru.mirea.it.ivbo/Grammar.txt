@@ -1,0 +1,67 @@
+
+if ::= T_IF T_LPAREN (log_exp | comp_exp) T_RPAREN T_LBRACE ... T_RBRACE [ else ] // if (a > 1) { ... }
+else if ::= T_ELSE [ if ] // else if (a == True) { ... }
+else ::= T_ELSE T_LBRACE ... T_RBRACE // else { ... }
+switch case ?
+
+for ::= T_FOR T_LPAREN (ident | assign) (log_exp | comp_exp) T_SEMICL (assign | self_assign) T_RPAREN T_LBRACE ... T_RBRACE // for (int i = 0; i < 10; i += 1;) { ... }
+while ::= T_WHILE T_LPAREN (log_exp | comp_exp) T_RPAREN T_LBRACE ... T_RBRACE // while (a <= 10) { ... }
+do while ?
+
+void ::= (T_CHAR | T_INT | T_FLOAT) T_IDENT (== main) T_LPAREN T_VOID T_RPAREN T_LBRACE ... T_RBRACE // int main(void) { ... }
+return ::= T_RETURN T_LPAREN (log_exp | comp_exp) | T_IDENT T_RPAREN
+
+assign ::= T_IDENT T_ASSGN (T_IDENT | T_INTCON | T_CHARCON | T_FLOATCON | T_STRINGCON) | arith_exp T_SEMICL   // a = 1; a = a + 3;
+self_assign :: =  T_IDENT (T_ADDEQUAL | T_SUBEQUAL | T_MULEQUAL | T_DIVEQUAL | T_REMEQUAL) (T_IDENT | T_INTCON | T_CHARCON | T_FLOATCON | T_STRINGCON) T_SEMICL // a += 3;
+ident ::= (T_CHAR | T_INT | T_FLOAT) (assign) | (T_IDENT T_SEMICL) // int a = 1; char c;
+log_exp ::= [T_NOT] T_IDENT (T_OR | T_AND) T_IDENT
+comp_exp ::= T_IDENT (T_EQUAL | T_LESS | T_QREATER | T_LEQUAL | T_REQUAL | T_NOTEQUAL) (T_IDENT | T_INTCON | T_FLOATCON | T_STRINGCON | T_CHARCON)
+arith_exp ::= T_IDENT (T_ADD | T_SUB | T_MUL | T_DIV | T_REMOFDIV) (T_IDENT | T_INTCON | T_FLOATCON | T_STRINGCON | T_CHARCON)
+
+
+
+reservedTokens = {"T_CHAR", "T_INT", "T_FLOAT", "T_VOID", "T_IF", "T_ELSE", "T_WHILE", "T_FOR", "T_RETURN"}
+reserved = new String[]{"char", "int", "float", "void", "if", "else", "while", "for", "return"}
+separators = {"T_COMMA", "T_SEMICL"}
+log_operations = {"T_OR", "T_AND"}
+comp_operations = {"T_EQUAL", "T_LESS", "T_QREATER", "T_LEQUAL", "T_REQUAL", "T_NOTEQUAL"}
+arith_operations = {"T_ADD", "T_SUB", "T_MUL", "T_DIV", "T_REMOFDIV"}
+assign_operations = {"T_ADDEQUAL", "T_SUBEQUAL", "T_MULEQUAL", "T_DIVEQUAL", "T_REMEQUAL", T_ASSGN}
+symbols = {'+', '–', '*', '/', '%', '(', ')', '{', '}', '[', ']', '=', '|', '&', '<', '>', '!', ';', ','}
+
+T_EOF, /* конец файла */
+T_UNDEF, /* неизвестный токен, сигнализирует об ошибке */
+T_IDENT, /* идентификатор */
+T_INTCON,  /* целое число */
+T_FLOATCON, /* число с плавающей точкой */
+T_STRINGCON, /* "" */
+T_CHARCON, /* '' */
+T_ASSGN, /* присваивание */
+T_ADD, /* + */
+T_SUB, /* - */
+T_MUL, /* * */
+T_DIV, /* / */
+T_REMOFDIV,  /* % */
+T_LPAREN, /* ( */
+T_RPAREN, /* ) */
+T_COMM, /* комментарий */
+T_SEMICL, /* ; */
+T_LBRACE, /* { */
+T_RBRACE, /* } */
+T_LSQBRACE, /* [ */
+T_RSQBRACE, /* ] */
+T_COMMA, /* , */
+T_EQUAL, /* == */
+T_LESS, /* < */
+T_LEQUAL, /* <= */
+T_QREATER, /* > */
+T_REQUAL, /* >= */
+T_NOTEQUAL, /* != */
+T_OR, /* | */
+T_AND, /* & */
+T_NOT, /* ! */
+T_ADDEQUAL, /* += */
+T_SUBEQUAL, /* -= */
+T_MULEQUAL, /* *= */
+T_DIVEQUAL, /* /= */
+T_REMEQUAL, /* %= */
