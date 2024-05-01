@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="007e6f89-eaf4-4eb0-aa20-d3bb054615af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DSL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/Laba 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Analizator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/ArithmeticExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Assign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/CompExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Else.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/For.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Grammar.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/If.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Initialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Interpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/LogicExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Printf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Scanf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/SelfAssign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/TOKENS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/While.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/output2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 1/Practica 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 1/src/ru/mirea/it/ivbo/ReversePolishRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 1/src/ru/mirea/it/ivbo/ReversePolishRecord2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 1/src/ru/mirea/it/ivbo/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 1/src/ru/mirea/it/ivbo/noResultException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 1/src/ru/mirea/it/ivbo/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 2/Practica 2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 2/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 2/src/ru/mirea/it/ivbo/DFSM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 2/src/ru/mirea/it/ivbo/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 2/src/ru/mirea/it/ivbo/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 3/Practica 3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 3/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 3/src/ru/mirea/it/ivbo/Kkodirovanie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 3/src/ru/mirea/it/ivbo/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica 3/src/ru/mirea/it/ivbo/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2cMXzbgfilELwzbpKoOFoVOKUx3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/vladi/Java 2c/Circuits",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vladi\Java 2c\DSL\Laba 1\src\ru.mirea.it.ivbo" />
+      <recent name="C:\Users\vladi\Java 2c\DSL\Laba 1\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Interpreter">
+    <configuration name="ArithmeticExpression" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.it.ivbo.ArithmeticExpression" />
+      <module name="Laba 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.it.ivbo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompExpression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.it.ivbo.CompExpression" />
+      <module name="Laba 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.it.ivbo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Interpreter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.it.ivbo.Interpreter" />
+      <module name="Laba 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.it.ivbo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicExpression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.it.ivbo.LogicExpression" />
+      <module name="Laba 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.it.ivbo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Parser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.it.ivbo.Parser" />
+      <module name="Laba 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.it.ivbo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Printf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.it.ivbo.Printf" />
+      <module name="Laba 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mirea.it.ivbo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ArithmeticExpression" />
+      <item itemvalue="Application.CompExpression" />
+      <item itemvalue="Application.Printf" />
+      <item itemvalue="Application.LogicExpression" />
+      <item itemvalue="Application.Interpreter" />
+      <item itemvalue="Application.Parser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Interpreter" />
+        <item itemvalue="Application.LogicExpression" />
+        <item itemvalue="Application.CompExpression" />
+        <item itemvalue="Application.Printf" />
+        <item itemvalue="Application.Parser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="007e6f89-eaf4-4eb0-aa20-d3bb054615af" name="Changes" comment="" />
+      <created>1707922687946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707922687946</updated>
+      <workItem from="1707922689417" duration="2717000" />
+      <workItem from="1708437335348" duration="6476000" />
+      <workItem from="1708495890519" duration="4776000" />
+      <workItem from="1709100979589" duration="1809000" />
+      <workItem from="1709459235580" duration="1500000" />
+      <workItem from="1709659138943" duration="35231000" />
+      <workItem from="1709929578392" duration="1382000" />
+      <workItem from="1710310780967" duration="1992000" />
+      <workItem from="1711048032274" duration="11894000" />
+      <workItem from="1711113811176" duration="3696000" />
+      <workItem from="1711144162225" duration="18669000" />
+      <workItem from="1711438705571" duration="1849000" />
+      <workItem from="1711738685010" duration="6223000" />
+      <workItem from="1711962770753" duration="125000" />
+      <workItem from="1712125766046" duration="5095000" />
+      <workItem from="1712257359375" duration="7883000" />
+      <workItem from="1712325078554" duration="52292000" />
+      <workItem from="1713287969685" duration="4173000" />
+      <workItem from="1713347135111" duration="417000" />
+      <workItem from="1713376988889" duration="4247000" />
+      <workItem from="1713463636011" duration="23477000" />
+      <workItem from="1714026918637" duration="6449000" />
+      <workItem from="1714044431311" duration="3206000" />
+      <workItem from="1714244229367" duration="57124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
