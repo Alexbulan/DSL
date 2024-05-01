@@ -5,37 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="007e6f89-eaf4-4eb0-aa20-d3bb054615af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DSL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/Laba 1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Analizator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/ArithmeticExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Assign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/CompExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Else.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/For.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Grammar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/If.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Initialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Interpreter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/LogicExpression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Printf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Scanf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/SelfAssign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/TOKENS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/While.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/input2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba 1/src/ru.mirea.it.ivbo/output2.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Practica 1/Practica 1.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Practica 1/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Practica 1/src/ru/mirea/it/ivbo/ReversePolishRecord.java" afterDir="false" />
@@ -53,7 +22,6 @@
       <change afterPath="$PROJECT_DIR$/Practica 3/src/ru/mirea/it/ivbo/Kkodirovanie.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Practica 3/src/ru/mirea/it/ivbo/input.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Practica 3/src/ru/mirea/it/ivbo/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,12 +201,32 @@
       <workItem from="1713463636011" duration="23477000" />
       <workItem from="1714026918637" duration="6449000" />
       <workItem from="1714044431311" duration="3206000" />
-      <workItem from="1714244229367" duration="57124000" />
+      <workItem from="1714244229367" duration="57431000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1714597772127</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714597772127</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create DSL, add Lexer, Parser, Interpreter">
+      <created>1714597835909</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714597835909</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="Create DSL, add Lexer, Parser, Interpreter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create DSL, add Lexer, Parser, Interpreter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
