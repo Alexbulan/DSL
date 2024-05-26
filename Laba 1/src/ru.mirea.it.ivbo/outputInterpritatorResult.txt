@@ -1,0 +1,12 @@
+INTERPRETATION ERROR! Printf '"%s" a' is not correct (a is not 'string')
+i = 1
+b = 1
+b = 0
+b = -1
+b = -2
+s = yes
+s = no
+s = no
+s = no
+s = no
+The parsing was completed successfully

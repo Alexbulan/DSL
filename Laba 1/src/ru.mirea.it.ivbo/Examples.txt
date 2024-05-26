@@ -1,0 +1,24 @@
+if (1 | 0) {
+    printf("%s", d);
+} else {
+    printf("%s", r);
+}
+
+void main()
+{
+    int a = 5;
+    int b = 3;
+    int c = a + 1;
+    if (c > 4) {
+        b *= 2;
+        c = a + b;
+        printf("%d", c);
+    } else {
+        c -= 1;
+        printf("%d", c);
+    }
+    for (int g = 0; g < c; g += 1;) {
+        printf("%d", g);
+    }
+}
+Вычисление и сравнение выражений с разными типами данных

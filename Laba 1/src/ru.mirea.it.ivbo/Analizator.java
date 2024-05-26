@@ -44,13 +44,12 @@ public class Analizator {
         T_MULEQUAL, /* *= */
         T_DIVEQUAL, /* /= */
         T_REMEQUAL, /* %= */
-
     }
 
-    public static String[] reservedTokens = new String[]{"T_CHAR", "T_INT", "T_FLOAT", "T_VOID", "T_IF", "T_ELSE", "T_WHILE", "T_FOR", "T_RETURN", "T_PRINTF", "T_SCANF"};
+    public static String[] reservedTokens = new String[]{"T_CHAR", "T_INT", "T_FLOAT", "T_STRING", "T_VOID", "T_IF", "T_ELSE", "T_WHILE", "T_FOR", "T_RETURN", "T_PRINTF", "T_SCANF"};
     public static String[] operations = new String[]{"T_EQUAL", "T_LESS", "T_LEQUAL", "T_GREATER", "T_REQUAL", "T_NOTEQUAL", "T_OR", "T_AND", "T_NOT", "T_ADDEQUAL",
             "T_SUBEQUAL", "T_MULEQUAL", "T_DIVEQUAL", "T_REMEQUAL", "T_ADD", "T_SUB", "T_MUL", "T_DIV", "T_REMOFDIV"};
-    public static String[] reserved = new String[]{"char", "int", "float", "void", "if", "else", "while", "for", "return", "printf", "scanf"};
+    public static String[] reserved = new String[]{"char", "int", "float", "string", "void", "if", "else", "while", "for", "return", "printf", "scanf"};
     public static String[] withoutParam = new String[]{"T_COMMA", "T_SEMICL"};
     static Character[] letters = new Character[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
@@ -60,19 +59,6 @@ public class Analizator {
     static Character[] digits = new Character[]{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
     Character[] symbols = new Character[]{'+', '–', '*', '/', '%', '(', ')', '{', '}', '[', ']', '=', '|', '&', '<', '>', '!', ';', ','};
 
-    static String[] TOKEN_NAMES = new String[]{
-            "T_UNDEF",
-            "T_IDENT",
-            "T_INTCON",
-            "T_ASSGN",
-            "T_ADD",
-            "T_SUB",
-            "T_MUL",
-            "T_DIV",
-            "T_LPAREN",
-            "T_RPAREN",
-            "T_COMM"
-    };
     static String sym = new String("T_UNDEF");
     static StringBuilder ident = new StringBuilder();
     static int int_num;
@@ -133,7 +119,6 @@ public class Analizator {
                 sym = "T_EOF";
                 return sym;
             }
-
             if (isalpha(ch) || ch == '_') {
                 ident = new StringBuilder();
                 do {
@@ -167,10 +152,13 @@ public class Analizator {
                 }
             } else if (isstr(ch) || ischar(ch)) {
                 ident = new StringBuilder();
+                int c = 0;
                 do {
                     ch = getchar();
                     count += 1;
                     if (!isstr(ch) && !ischar(ch)) ident.append(ch);
+                    c += 1;
+                    if (c >= 50) break;
                 } while (!isstr(ch) && !ischar(ch));
                 if (isstr(ch))
                     sym = "T_STRINGCON";
@@ -304,7 +292,7 @@ public class Analizator {
                         ch = getchar();
                         count += 1;
                         if (ch == '='){
-                            ident = new StringBuilder("=");
+                            ident = new StringBuilder("==");
                             sym = "T_EQUAL";
                         }else{
                             sym = "T_ASSGN";
@@ -352,7 +340,7 @@ public class Analizator {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            Interpreter.printLexerError("Invalid code");
         }
         return sym;
     }
@@ -383,6 +371,9 @@ public class Analizator {
                 case "float" -> {
                     return "T_FLOAT";
                 }
+                case "string" -> {
+                    return "T_STRING";
+                }
                 case "if" -> {
                     return "T_IF";
                 }
@@ -397,9 +388,6 @@ public class Analizator {
                 }
                 case "else" -> {
                     return "T_ELSE";
-                }
-                case "return" -> {
-                    return "T_RETURN";
                 }
                 case "printf" -> {
                     return "T_PRINTF";
@@ -419,10 +407,10 @@ public class Analizator {
 
     public static void main(String[] args) {
         try {
-            InputStream inputStream = new FileInputStream("C:/Users/vladi/Java 2c/DSL/Laba 1/src/ru.mirea.it.ivbo/input.txt");
+            InputStream inputStream = new FileInputStream("C:/Users/vladi/Java 2c/DSL/Laba 1/src/ru.mirea.it.ivbo/inputCode.txt");
             System.setIn(inputStream);
 
-            OutputStream outputStream = new FileOutputStream("C:/Users/vladi/Java 2c/DSL/Laba 1/src/ru.mirea.it.ivbo/output.txt");
+            OutputStream outputStream = new FileOutputStream("C:/Users/vladi/Java 2c/DSL/Laba 1/src/ru.mirea.it.ivbo/outputParserTokens.txt");
             System.setOut(new PrintStream(outputStream));
 
             String sym = getsym();
@@ -431,13 +419,15 @@ public class Analizator {
                 System.out.printf("%d, %d, %s, ", line, count, sym);
 
                 if (Objects.equals(sym, "T_IDENT")) {
-                    System.out.printf("\"%s\"\n", ident);
+                    System.out.printf("%s\n", ident);
                 } else if (Objects.equals(sym, "T_INTCON")) {
                     System.out.printf("%d\n", int_num);
                 }else if (Objects.equals(sym, "T_FLOATCON")) {
                     System.out.printf(float_num + "\n");
-                }else if (Objects.equals(sym, "T_CHARCON") || Objects.equals(sym, "T_STRINGCON")) {
-                        System.out.printf("\"%s\"\n", ident);
+                }else if (Objects.equals(sym, "T_STRINGCON")) {
+                    System.out.printf("\"%s\"\n", ident);
+                }else if (Objects.equals(sym, "T_CHARCON")){
+                    System.out.printf("'%s'\n", ident);
                 } else if (Arrays.asList(reservedTokens).contains(sym)) {
                     System.out.printf("\"%s\"\n", ident);
 //                }else if (Arrays.asList(withoutParam).contains(sym)) {
@@ -450,7 +440,7 @@ public class Analizator {
                 sym = getsym();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            Interpreter.printLexerError("Invalid code");
         }
     }
 }

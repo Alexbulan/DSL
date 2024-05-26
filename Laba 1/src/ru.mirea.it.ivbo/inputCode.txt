@@ -1,0 +1,28 @@
+void main()
+{
+    int a = 5;
+    int b = 3 - 2;
+    int c = a + 1;
+    string s = "ok";
+    a = 3;
+    printf("%s", a);
+    if (1 < a - 2) {
+        printf("%s", a);
+        a -= 1;
+    }
+    for (int i = 0; i < 5; i += 1;) {
+        if (s == "ok"){
+            printf("i = %d", i);
+        } else {
+            printf("b = %d", b);
+            b -= 1;
+        }
+        s = "yes";
+    }
+    while (1 < c){
+        printf("s = %s", s);
+        s = "no";
+        c = c - 1;
+    }
+
+}

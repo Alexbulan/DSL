@@ -1,8 +1,0 @@
-YES
-e = 4
-e = 3
-The iterator of the loop is equal to 2
-The iterator of the loop is equal to 3
-The iterator of the loop is equal to 4
-End of the program!
-The parsing was completed successfully
